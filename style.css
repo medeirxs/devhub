@@ -1,10 +1,192 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  color: #fff;
 }
 
 body{
   background-color: #1c1c1c;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+
+header span{
+  font-size: 25px;
+}
+
+header nav{
+  display: flex;
+  gap: 15px;
+}
+
+header nav a:hover{
+  color: gray;
+}
+
+#mobile-nav{
+  display: none;
+}
+
+#mobile-nav a:hover{
+  color: gray;
+}
+
+#flyer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 15px 0px;
+}
+
+#flyer-content{
+  background-color: #9c9c9c;
+  width: 76vw;
+  height: 70vh;
+  border-radius: 25px;
+}
+
+#recommended-gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#gallery-content{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#gallery-content nav{
+  display: flex;
+  gap: 15px;
+}
+
+#gallery-content span{
+  font-size: 20px;
+}
+
+#recommended-item{
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  transition: .4s;
+}
+
+#recommended-item:hover{
+  filter: brightness(0.5);
+  transition: .4s;
+}
+
+#recommended-item-last1{
+  width: 280px;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+#recommended-item-last2{
+  width: 280px;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+#recommended-item-last3{
+  width: 280px;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+#recommended-item-last:hover{
+  filter: brightness(0.5);
+  transition: .4s;
+}
+
+@media (max-width:500px){
+  #gallery-content{
+    gap: 10px;
+  }
+  #gallery-content span{
+    font-size: 17px;
+  }
+  #gallery-content{
+    margin-left: 45px;
+  }
+  #recommended-item{
+    width: 170px;
+  }
+  #recommended-item-last1{
+    display: none;
+  }
+  #recommended-item-last2{
+    display: none;
+  }
+  #recommended-item-last3{
+    display: none;
+  }
+  #flyer-content{
+    width: 90vw;
+    height: 30vh;
+  }
+  header nav{
+    display: none;
+  }
+  #mobile-nav{
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media (max-width:1490px){
+  #recommended-item-last3{
+    display: none;
+  }
+}
+
+@media (max-width:1250px){
+  #recommended-item-last2{
+    display: none;
+  }
+  #recommended-item-last3{
+    display: none;
+  }
+}
+
+@media (max-width:925px){
+  #recommended-item-last1{
+    display: none;
+  }
+  #recommended-item-last2{
+    display: none;
+  }
+  #recommended-item-last3{
+    display: none;
+  }
+}
+
+@media (max-width:650px){
+  #recommended-item{
+    width: 170px;
+  }
+
+  #recommended-item-last1{
+    display: none;
+  }
+  #recommended-item-last2{
+    display: none;
+  }
+  #recommended-item-last3{
+    display: none;
+  }
 }

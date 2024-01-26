@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Devhub</title>
-  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>initial commit website</h1>
+  <header>
+    <span>Devhub</span>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Projetos</a>
+      <a href="">Github</a>
+    </nav>
+    <div id="mobile-nav">
+      <a href="">Home</a>
+      <a href="">Github</a>
+    </div>
+  </header>
+
+  <main>
+    <div id="flyer">
+      <canvas id="flyer-content"></canvas>
+    </div>
+
+    <div id="recommended-gallery">
+      <div id="gallery-content">
+        <span>RECOMENDADO</span>
+        <nav>
+          <a href="https://www.tiktok.com/@jpcairesf.dev/video/7327398238858874118?_t=8jI5crwZg61&_r=1"><img src="/assets/recommended/universidade-livre-faculdade.jpg" id="recommended-item"></a>
+          <a href=""><img src="/assets/recommended/onde-achar-fontes_00000.jpg" id="recommended-item"></a>
+          <a href=""><img src="/assets/default-container.png" id="recommended-item-last1"></a>
+          <a href=""><img src="/assets/default-container.png" id="recommended-item-last2"></a>
+          <a href=""><img src="/assets/default-container.png" id="recommended-item-last3"></a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
 </body>
 </html>
